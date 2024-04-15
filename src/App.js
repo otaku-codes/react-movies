@@ -106,13 +106,13 @@ function Movies({ movies, title, setCurrentSelection }) {
         {title === "Trending" ? (
           <div className="trend-btn-grp">
             <button
-              className="trend-btn"
+              className="trend-btns"
               onClick={() => setCurrentSelection("movie")}
             >
               <i className="fa fa-play-circle mr-2">&nbsp; </i>Movies
             </button>
             <button
-              className="trend-btn"
+              className="trend-btns"
               onClick={() => setCurrentSelection("tv")}
             >
               <i className="fa fa-list mr-2"></i>&nbsp; TV Shows
