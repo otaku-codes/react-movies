@@ -222,18 +222,13 @@ h2 {
 }
 
 .trend-btns {
-  padding: 10px 11px;
-  line-height: 1.2em;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  background-image: initial;
-  border: 0px;
-  background-color: rgb(255, 107, 0);
-  margin: 0px 4px;
-  border-radius: 3px;
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
+  border: 0px !important;
+    background-color: #ff6b00;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0px 4px;
+    padding: 10px 11px;
 }
 
 .trend-btn-grp {
