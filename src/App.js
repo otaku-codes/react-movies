@@ -17,7 +17,7 @@ const headerDesc =
 // https://api.themoviedb.org/3/trending/tv/day?api_key=${APIKEY}&with_origin_country=IN&page=1
 // `https://api.themoviedb.org/3/search/movie?api_key=${APIKEY}&with_origin_country=IN&language=en-US&query=${query}&page=1&include_adult=false`
 
-const APIKEY = "your API key";
+const APIKEY = "1efe3716ab36633b8d2d333ff6caf35b";
 
 export default function App() {
   const [currentSelection, setCurrentSelection] = useState("movie");
