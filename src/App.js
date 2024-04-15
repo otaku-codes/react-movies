@@ -102,7 +102,7 @@ function SearchResult({ moviesResult }) {
 function Movies({ movies, title, setCurrentSelection, currentSelection }) {
   return (
     <>
-      <div>
+      <div style={{display: "flex"}}>
         <h2>{title}</h2>
         {title === "Trending" ? (
           <div className="trend-btn-grp">
