@@ -81,6 +81,7 @@ export default function App() {
       <Movies
         movies={movies}
         title={"Trending"}
+        currentSelection={currentSelection}
         setCurrentSelection={setCurrentSelection}
       />
       <Movies movies={upcoming} title={"Coming Soon"} />
@@ -98,21 +99,25 @@ function SearchResult({ moviesResult }) {
   ) : null;
 }
 
-function Movies({ movies, title, setCurrentSelection }) {
+function Movies({ movies, title, setCurrentSelection, currentSelection }) {
   return (
     <>
-      <h2>
-        {title}
+      <div>
+        <h2>{title}</h2>
         {title === "Trending" ? (
           <div className="trend-btn-grp">
             <button
-             className={`trend-btns ${currentSelection === "movie" ? 'active' : ''}`}
+              className={`trend-btns ${
+                currentSelection === "movie" ? "active" : ""
+              }`}
               onClick={() => setCurrentSelection("movie")}
             >
               <i className="fa fa-play-circle mr-2">&nbsp; </i>Movies
             </button>
             <button
-              className={`trend-btns ${currentSelection === "tv" ? 'active' : ''}`}
+              className={`trend-btns ${
+                currentSelection === "tv" ? "active" : ""
+              }`}
               onClick={() => setCurrentSelection("tv")}
             >
               <i className="fa fa-list mr-2"></i>&nbsp; TV Shows
@@ -121,7 +126,7 @@ function Movies({ movies, title, setCurrentSelection }) {
         ) : (
           ""
         )}
-      </h2>
+      </div>
       <div className="moviesCotainer">
         {movies.map((item, index) => {
           return <MovieItem item={item} key={index} />;

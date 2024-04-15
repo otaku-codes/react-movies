@@ -214,16 +214,17 @@ h5 {
 }
 
 h2 {
-  padding: 0px 50px;
-  color: white;
   font-weight: 300;
-  font-size: 33px;
-  margin: 40px 0px 10px 0px;
+  font-size: 32px;
+  margin: 0;
+  padding-left: 45px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .trend-btns {
   border: 0px !important;
-    background-color: #ff6b00;
+    background-color: #000000;
     border-radius: 3px;
     color: #fff;
     font-size: 14px;
@@ -288,5 +289,5 @@ h2 {
 }
 
 .active {
-  background-color: black;
+  background-color: #ff6b00;
 }
