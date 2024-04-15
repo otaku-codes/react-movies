@@ -286,3 +286,7 @@ h2 {
   padding: 20px 50px;
   overflow-y: scroll;
 }
+
+.active {
+  background-color: black;
+}
